@@ -1,12 +1,46 @@
+/* Tab Button Styles */
+.committee-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.committee-tabs button {
+    background-color: #102a3c;
+    color: #fff;
+    border: 2px solid #40fe9f;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.committee-tabs button.active,
+.committee-tabs button:hover {
+    background-color: #40fe9f;
+    color: #102a3c;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* (The rest of your existing CSS below remains unchanged) */
 .team {
     width: 100%;
     height: auto;
     background-color: #102a3c;
     padding: 4rem 10px;
     overflow: hidden;
-  }
-  
-  .team .team-wrapper {
+}
+
+.team .team-wrapper {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
@@ -14,9 +48,9 @@
     flex-direction: column;
     justify-content: flex-start;
     overflow: hidden;
-  }
-  
-  .team .team-wrapper h4 {
+}
+
+.team .team-wrapper h4 {
     max-width: 400px;
     width: 100%;
     text-align: center;
@@ -27,9 +61,9 @@
     font-size: 30px;
     color: #fff;
     text-transform: uppercase;
-  }
-  
-  .team .team-wrapper .subteam-heading {
+}
+
+.team .team-wrapper .subteam-heading {
     width: 400px;
     border-bottom: 2px solid #fff;
     padding-bottom: 10px;
@@ -38,91 +72,90 @@
     font-weight: 800;
     text-transform: uppercase;
     margin: 2rem 0 1rem 4rem;
-  }
-  
-  @media (max-width: 750px) {
+}
+
+@media (max-width: 750px) {
     .team .team-wrapper .subteam-heading {
-      width: 90%;
-      margin: 2rem auto 1rem auto;
-      text-align: center;
+        width: 90%;
+        margin: 2rem auto 1rem auto;
+        text-align: center;
     }
-  }
-  
-  .main-team {
+}
+
+.main-team {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-  }
-  
-  .left-align {
+}
+
+.left-align {
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: 5rem;
-  }
-  
-  @media (max-width: 750px) {
+}
+
+@media (max-width: 750px) {
     .left-align {
-      justify-content: center;
-      align-items: center;
-      margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
     }
-  }
-  
-  .main-team .card {
+}
+
+.main-team .card {
     margin: 1rem;
-  }
-  
-  .main-team .card img {
+}
+
+.main-team .card img {
     width: auto;
     height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     border-radius: 10px;
-  }
-  
-  @media (max-width: 375px) {
+}
+
+@media (max-width: 375px) {
     .main-team .card img {
-      height: 290px;
+        height: 290px;
     }
-  }
-  
-  .main-team .card .small-img {
+}
+
+.main-team .card .small-img {
     height: 250px;
-  }
-  
-  .main-team .card h5 {
+}
+
+.main-team .card h5 {
     font-size: 22px;
     margin-left: 1rem;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     color: #fff;
-  }
-  
-  .main-team .card p {
+}
+
+.main-team .card p {
     font-size: 18px;
     margin-left: 1rem;
     color: #fff;
-  }
+}
 
-  
-  .main-team .small-name {
+.main-team .small-name {
     text-align: center;
-    margin: .5rem auto 0 auto !important;
-  }
+    margin: 0.5rem auto 0 auto !important;
+}
 
-  .main-team .small-description {
+.main-team .small-description {
     text-align: center;
-  }
-  
-  .main-team-two {
+}
+
+.main-team-two {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  @media (max-width: 950px) {
+}
+
+@media (max-width: 950px) {
     .main-team-two {
-      flex-direction: column;
+        flex-direction: column;
     }
-  }
+}
